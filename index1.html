@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Sign In</h2>
+    <input type="email" id="signinEmail" placeholder="Email" required>
+    <input type="password" id="signinPassword" placeholder="Password" required>
+    <button onclick="signin()">Login</button>
+    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+  </div>
+  <script src="script.js"></script>
+  <script>function checkLoginAndAdd() {
+    if (!localStorage.getItem("isLoggedIn")) {
+        window.location.href = "signin.html";
+    } else {
+        alert("Item added to cart ✅");
+        // addToCart() logic can be written here
+    }
+  }
+  </script>
+
+  </script>
+</body>
+</html>
